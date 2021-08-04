@@ -1,5 +1,5 @@
 # 2021-2S-2D
-Repositório que reúne os conteúdos desenvolvidos com as turmas do segundo termo do segundo semestre de 2021 do curso Técnico em Desenvolvimento de Sistemas abordando os tópicos:
+Repositório que reúne os conteúdos desenvolvidos no segundo termo do segundo semestre de 2021 do curso Técnico em Desenvolvimento de Sistemas abordando os tópicos:
 
 ## Sprint 1 - Banco de dados
 * SQL Server
