@@ -1,30 +1,29 @@
-USE PCLINICS;
+USE CLINICA
+
+INSERT INTO CLINICA(nomeClinica, endereco, razaoSocial)
+VALUES('Pclinics', 'Avenida Paulista', 'Pclinics, clinica de gatos e cachorros'),('Doutor Pet','Rua Guaporé','Doutor Pet, clinica que atende todos os animais');
 GO
 
-INSERT INTO CLINICA(endereco)
-VALUES('Avenida Paulista'),('Rua Guaporé');
+INSERT INTO TIPO(nomeTipo)
+VALUES('Cachorro'),('Papagaio')
 GO
 
-INSERT INTO PET(nomePet)
-VALUES('Rex'),('Marley');
+INSERT INTO DONO(nomeDono)
+VALUES('Lucas'),('Saulo');
 GO
 
-INSERT INTO VETERINARIO(idClinica, nomeVeterinario, especializacao)
-VALUES('1','Gustavo', 'Cirurgia de animais pesquenos'), ('2','Kaik','Cardiologia');
+INSERT INTO VETERINARIO(idClinica, nomeVeterinario, especializacao, CRMV)
+VALUES(1,'Gustavo', 'Cirurgia de animais pequenos', '29846'), (2,'Kaik','Cardiologia', '43567');
 GO
 
-INSERT INTO CONSULTA(idVeterinario, idPet, dataHoraConsulta, descricaoConsulta)---------------->não sei o pq mas o data e hora não está funcionando
-VALUES(1,1,'16072021 11:00:00 AM','tudo deu certo'), (2,2,'16072021 12:00:00 AM','tudo deu errado');
+INSERT INTO RACA(idTipo, nomeRaca)
+VALUES(2,'Amazona aestiva'),(1,'Yorkshire');
 GO
 
-INSERT INTO RACA(idPet, nomeRaca)
-VALUES('0','Pastor Alemão'),('1','Golden');
+INSERT INTO PET(idDono, idRaca, nomePet, nascimento)
+VALUES(2, 2, 'Marley','18-07-2019'),(1, 1,'Louro José','16-07-2004');
 GO
 
-INSERT INTO TIPO(idRaca, nomeTipo)
-VALUES('1','cachorro'),('2','cachorro');
-GO
-
-INSERT INTO DONO(idPet, nomeDono)
-VALUES('1','Saulo'), ('2','Lucas');
+INSERT INTO CONSULTA(idVeterinario, idPet, dataHoraConsulta, descricaoConsulta)
+VALUES(1, 2, '08-08-2021 09:00:00 AM','Deu tudo errado F'),(2, 1,'08-08-2021 12:00:00 AM','Deu tudo certo');
 GO

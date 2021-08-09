@@ -1,20 +1,26 @@
 USE STUDIO;
 GO
 
-SELECT * FROM EMPRESA;
+INSERT INTO EMPRESA(nomeEmpresa, endereco)
+VALUES ('Kondzilla','Avenida Paulista'),('Pineapple','Rua Guaporé');
 GO
 
-SELECT * FROM ARTISTA;
+INSERT INTO ARTISTA(idEmpresa, nomeArtista)
+VALUES (1,'MC Rick'),(2,'L7nnon');
 GO
 
-SELECT * FROM ALBUM;
+INSERT INTO ALBUM(idArtista, nomeAlbum, datalançamento, localizacao, quantidadeMinutos, ativoVisualização)
+VALUES (2,'HHR','HHR','16-07-2021','RJ','60','sim'),(1,'RickWeek', 'RickWeek', '18-07-2021', 'MG', '70', 'nao');
 GO
 
-SELECT * FROM CD;
+INSERT INTO CD(idAlbum, nomeCD, numeroCd)
+VALUES (1,'Faca valer','10'),(2,'Posso te fazer chora','20');
 GO
 
-SELECT * FROM ESTILO;
+INSERT INTO ESTILO(idCd, nomeEstilo, nomeEstilo1, nomeEstilo2)
+VALUES (1,'Trap','Acustico','Rap'),(2,'Funk','Trap','');
 GO
 
-SELECT * FROM USUARIO;
+INSERT INTO USUARIO(idEmpresa, nomeUsuario, nomeEmail,senha, tipoPermissao)
+VALUES (1,'Gustavo','gustavo@gmail','1234','comum'),(2,'kaik','kaik@gmail','123','administrador');
 GO
