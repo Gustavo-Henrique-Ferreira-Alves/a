@@ -1,11 +1,12 @@
-USE CLINICA
+USE CLINICA;
+GO
 
 INSERT INTO CLINICA(nomeClinica, endereco, razaoSocial)
-VALUES('Pclinics', 'Avenida Paulista', 'Pclinics, clinica de gatos e cachorros'),('Doutor Pet','Rua Guaporé','Doutor Pet, clinica que atende todos os animais');
+VALUES ('Pclinics', 'Avenida Paulista', 'Pclinics, clinica de gatos e cachorros'),('Doutor Pet','Rua Guaporé','Doutor Pet, clinica que atende todos os animais');
 GO
 
 INSERT INTO TIPO(nomeTipo)
-VALUES('Cachorro'),('Papagaio')
+VALUES('Cachorro'),('Papagaio');
 GO
 
 INSERT INTO DONO(nomeDono)
@@ -17,7 +18,7 @@ VALUES(1,'Gustavo', 'Cirurgia de animais pequenos', '29846'), (2,'Kaik','Cardiol
 GO
 
 INSERT INTO RACA(idTipo, nomeRaca)
-VALUES(2,'Amazona aestiva'),(1,'Yorkshire');
+VALUES (2,'Amazona aestiva'),(1,'Yorkshire');
 GO
 
 INSERT INTO PET(idDono, idRaca, nomePet, nascimento)

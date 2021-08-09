@@ -25,7 +25,7 @@ nomeAlbum VARCHAR(50) NOT NULL UNIQUE,
 datalançamento DATE NOT NULL,
 localizacao VARCHAR(100) NOT NULL UNIQUE,
 quantidadeMinutos INT NOT NULL,
-ativoVisualização VARCHAR(3) NOT NULL,
+ativoVisualização BIT NOT NULL,
 );
 GO
 
