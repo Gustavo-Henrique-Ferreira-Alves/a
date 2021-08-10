@@ -2,7 +2,7 @@ USE ARTISTA_OPTUS;
 GO
 
 SELECT nomeUsuario, nomeEmail
-FROM USUARIO WHERE TipoPermissao = 1;
+FROM USUARIO WHERE tipoPermissao = 1;
 GO
 
 SELECT * FROM ALBUM 
@@ -21,5 +21,5 @@ INNER JOIN ARTISTA
 ON ARTISTA.idArtista = ALBUM.idArtista
 INNER JOIN ESTILO
 ON ESTILO.idEstilo = ESTILO_ALBUM.idEstilo
-WHERE ALBUM.ativoVisualização = 1;
+WHERE ALBUM.ativoVisualizacao = 1;
 GO
